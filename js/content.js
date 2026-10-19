@@ -33,7 +33,7 @@ const CONTENT = {
   // SECTION 1
   flow: {
     heading: "Claude×楽天アフィで<br>何ができる？",
-    lead: "AIにお願いできる部分を増やすと、作業の流れがこんなに変わります。",
+    lead: "手間はそのまま、考える作業をAIが肩代わりしてくれます。",
     before: {
       label: "従来の作業",
       steps: ["商品を探す", "商品情報を調べる", "紹介文を考える", "SNSに投稿する"],
@@ -42,10 +42,9 @@ const CONTENT = {
       label: "AIを活用した作業",
       badge: "基本編",
       steps: [
-        "商品ジャンルの候補をClaudeに考えてもらう",
-        "楽天で実際の商品を確認する",
-        "商品情報をClaudeに渡す",
-        "紹介文をAIに作ってもらう",
+        '<span class="ai-tag">AIが</span>商品ジャンルの候補を考える',
+        "楽天で実際の商品を選んで確認する",
+        '<span class="ai-tag">AIが</span>商品情報から紹介文を作る',
         "自分で確認して投稿する",
       ],
     },

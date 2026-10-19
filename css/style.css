@@ -323,3 +323,5 @@ a:focus-visible, button:focus-visible {
   .levels { grid-template-columns: repeat(3, 1fr); }
   .step-card { padding: 32px 36px; }
 }
+
+.ai-tag { display: inline-block; margin-right: 8px; padding: 0 8px; border-radius: 4px; background: var(--c-pink-soft); color: var(--c-pink-deep); font: 700 12px/1.8 var(--font-sans); vertical-align: 1px; }
