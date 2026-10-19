@@ -334,3 +334,8 @@ a:focus-visible, button:focus-visible {
 }
 
 .ai-tag { display: inline-block; margin-right: 8px; padding: 0 8px; border-radius: 4px; background: var(--c-pink-soft); color: var(--c-pink-deep); font: 700 12px/1.8 var(--font-sans); vertical-align: 1px; }
+
+.cta-final__who { margin: 8px 0 24px; padding: 18px 18px 8px; background: #fff; border-radius: var(--radius-m); text-align: left; }
+.cta-final__who-label { margin-bottom: 4px; font-size: 14px; font-weight: 700; letter-spacing: .06em; color: var(--c-pink-deep); }
+.cta-final__who .check-list { margin-bottom: 8px; }
+.cta-final .btn { margin-top: 4px; }

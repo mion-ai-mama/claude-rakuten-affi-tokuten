@@ -196,7 +196,9 @@
       <div class="container">
         <div class="cta-final">
           <h2 class="cta-final__title" id="final-cta-title">${c.heading}</h2>
-          <p>${c.text}</p>
+          ${c.paragraphs.map((x) => `<p>${x}</p>`).join("")}
+          <div class="cta-final__who"><p class="cta-final__who-label">${c.listLabel}</p>${list(c.list, "check-list")}</div>
+          ${c.closingParagraphs.map((x) => `<p>${x}</p>`).join("")}
           ${ext(url, c.buttonText, "btn--large")}
         </div>
         <div class="textbook">
