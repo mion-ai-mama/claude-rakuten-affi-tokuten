@@ -40,6 +40,22 @@
     </section>`;
   }
 
+  function topCta(c, url) {
+    const image = `<a class="cta-soft__image" href="${esc(url)}" target="_blank" rel="noopener"><img src="${esc(c.image.src)}" alt="${esc(c.image.alt)}" width="1855" height="848"></a>`;
+    return `
+    <section class="container top-cta" aria-labelledby="top-cta-title">
+      <div class="cta-soft">
+        ${image}
+        <div class="cta-soft__text">
+          <h2 class="cta-soft__title" id="top-cta-title">${c.heading}</h2>
+          <p>${c.text}</p>
+          <ul class="cta-soft__list">${c.items.map((i) => `<li>${i}</li>`).join("")}</ul>
+        </div>
+        ${ext(url, c.buttonText)}
+      </div>
+    </section>`;
+  }
+
   function flowColumn(col, cls) {
     const b = col.badge ? badge(col.badge) : "";
     const steps = col.steps.map((s, i) => `<li><span class="flow__no">${i + 1}</span>${s}</li>`).join("");
@@ -232,6 +248,7 @@
     applyMeta(c.meta);
     main.innerHTML =
       hero(c.hero) +
+      topCta(c.topCta, c.lineUrl) +
       flow(c.flow) +
       prepare(c.prepare) +
       `<div class="basic-zone">${c.steps.map(step).join("")}</div>` +

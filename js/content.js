@@ -30,6 +30,24 @@ const CONTENT = {
     avatar: null,
   },
 
+  // ファーストビュー直下：教科書の5大特典（画像＋文字リスト。タップでLINEへ）
+  topCta: {
+    heading: "AIをもっと仕事に活かしたい方へ",
+    text: "AIを使って、自分にできることや働き方の選択肢を広げたい方に、無料の教科書をご案内しています。",
+    items: [
+      "いま一番始めやすい、AIマネタイズ手法",
+      "ChatGPT収益化プロンプト3選",
+      "AIマネタイズ神テンプレート",
+      "マネタイズのための生成AIツール3選",
+      "AI×SNSで収益を生む、リアル事例",
+    ],
+    buttonText: "詳しくはこちら →",
+    image: {
+      src: "assets/images/textbook-benefits.jpg",
+      alt: "AIマネタイズの教科書 5大特典。1 いま一番始めやすいAIマネタイズ手法、2 ChatGPT収益化プロンプト3選、3 AIマネタイズ神テンプレート、4 マネタイズのための生成AIツール3選、5 AI×SNSで収益を生むリアル事例",
+    },
+  },
+
   // SECTION 1
   flow: {
     heading: "Claude×楽天アフィで<br>何ができる？",

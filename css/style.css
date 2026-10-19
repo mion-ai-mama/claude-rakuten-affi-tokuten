@@ -125,6 +125,15 @@ a:focus-visible, button:focus-visible {
 }
 .cta-soft__image { display: block; border-radius: var(--radius-s); overflow: hidden; border: 1px solid var(--c-line); background: #fff; }
 .cta-soft__image img { width: 100%; height: auto; }
+.cta-soft__list { list-style: none; margin: 14px 0 0; padding: 0; counter-reset: benefit; display: grid; gap: 8px; font-size: 15px; color: var(--c-ink); }
+.cta-soft__list li {
+  counter-increment: benefit; display: flex; align-items: center; gap: 12px; padding: 12px 14px;
+  background: #fff; border: 1px solid var(--c-line); border-radius: var(--radius-s); line-height: 1.5; font-weight: 500;
+}
+.cta-soft__list li::before {
+  content: counter(benefit, decimal-leading-zero); flex: none; display: grid; place-items: center; width: 32px; height: 32px;
+  border-radius: 50%; background: var(--c-taupe); color: #fff; font-family: var(--font-serif); font-size: 13px; font-weight: 700;
+}
 .cta-soft__title { margin: 0 0 6px; font-family: var(--font-serif); font-size: 19px; color: var(--c-ink); line-height: 1.5; }
 .cta-soft p { font-size: 14.5px; }
 .cta-soft .btn { justify-self: start; }
